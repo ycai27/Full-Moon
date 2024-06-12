@@ -1,0 +1,53 @@
+h1 {
+    text-align: left;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+}
+
+.navbar {
+    display: flex;
+    background-color: blue;
+    color:white;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    color:white;
+}
+
+.navbutton { 
+    background-color: blue;
+    color:white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.navbutton:hover{
+    background-color: gray;
+}
+
+.order{
+    background-color: beige;
+    color:black;
+    padding: 20px;
+    border-radius: 10px;
+    border-color:beige;
+    cursor: pointer;
+    
+}
+
+.order:hover {
+    background-color: lightblue;
+    color:blue;
+}
+
+.banner{
+    background-color:purple;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
