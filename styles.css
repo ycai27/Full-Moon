@@ -60,6 +60,7 @@ a {
 }
 
 .navbutton { 
+    position: relative;
     background-color: rgba(3, 1, 103, 1);
     color:white;
     font-size:90%;
@@ -68,9 +69,7 @@ a {
     cursor: pointer;
     height: 52px;
     border: none;
-
-    display: inline-block;
-    vertical-align: middle;
+    outline: none;
     
 }
 
@@ -82,7 +81,7 @@ a {
     bottom: 0;
     width:0;
     background: white;
-    transition: width .2s;
+    transition: width .3s ease;
 }
 
 .navbutton:hover:after{
@@ -106,8 +105,9 @@ a {
 }
 
 .orderbutton:hover {
-    background-color: white;
+    background-color: rgb(255,219,87);
     color:rgba(3, 1, 103, 1);
+    
 }
 
 .bannerfull{
