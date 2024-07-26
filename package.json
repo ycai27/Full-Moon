@@ -1,5 +1,18 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.4"
-  }
+  },
+  "dependencies": {
+    "mongodb": "^6.8.0"
+  },
+  "name": "fullmoon2",
+  "description": "",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

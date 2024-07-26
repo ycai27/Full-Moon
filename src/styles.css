@@ -1,3 +1,6 @@
+:root {
+    --dark-blue: rgba(3, 1, 103, 1); 
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -10,12 +13,13 @@ h1 {
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
-    color:rgba(3, 1, 103, 1);
+    color: var(--dark-blue);
+    font-size:22px !important;
 }
 
 .navbar {
     display: flex;
-    background-color: rgba(3, 1, 103, 1);
+    background-color: var(--dark-blue);
     color:white;
     justify-content: space-between;
     /* align-content: center; */
@@ -28,6 +32,10 @@ h1 {
 }
 
 a {
+    text-decoration: underline !important;
+}
+
+#white {
     color:white;
 }
 
@@ -57,7 +65,7 @@ a {
 
 .navbutton { 
     position: relative;
-    background-color: rgba(3, 1, 103, 1);
+    background-color: var(--dark-blue);
     color:white;
     font-size:90%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -66,7 +74,6 @@ a {
     height: 52px;
     border: none;
     outline: none;
-    
 }
 
 .navbutton::after{
@@ -85,7 +92,7 @@ a {
 }
 
 .pagecontent{
-    padding-top: 52px;
+    padding-top: 80px;
 }
 
 .orderbutton{
@@ -97,12 +104,11 @@ a {
     border-radius: 40px;
     cursor: pointer;
     border:none;
-    
 }
 
 .orderbutton:hover {
     background-color: rgb(255,219,87);
-    color:rgba(3, 1, 103, 1);
+    color:var(--dark-blue);
 }
 
 .bannerfull{
@@ -116,18 +122,18 @@ a {
 }
 
 .sect1 {
-    height: 90%;
+    height: 86%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* background-color: lightblue; Optional: For visual clarity */
+    /* margin: 50px; */
 }
 
 .halfpic {
-    background-color: gray;
     width: 40%;
-    height: 60%;
+    height: 40vh;
+    position: relative;
 }
 
 .halftext {
@@ -138,7 +144,7 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* background-color: lightgreen;  */
+    font-size:1.2em;
 }
 
 .banner-menu{
@@ -158,13 +164,9 @@ a {
     align-items: center;
 }
 
-#white{
-    color:white;
-}
-
 .menubutton{
     color:rgba(247, 245, 203, 1);
-    background-color: rgba(3, 1, 103, 1);
+    background-color: var(--dark-blue);
     height:70px;
     padding:20px;
     font-size:20px;
@@ -172,21 +174,10 @@ a {
 
 .menubutton:hover {
     background-color: rgb(255,219,87);
-    color:rgba(3, 1, 103, 1);
+    color:var(--dark-blue);
     
 }
 
-.overlaytext-center{
-    position: absolute;
-    top: 365vh; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    background-color: #000000; 
-    color: #fff; 
-    padding: 10px 20px; 
-    font-size: 20px; 
-    text-align: center;
-}
 
 /* ACCORDION START */
 #accordion{
@@ -207,15 +198,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 500;
     cursor:pointer;
-    color: rgba(3, 1, 103, 1);
+    color: var(--dark-blue);
 }
 #accordion li label span{
     transform: rotate(90deg);
     font-size: 22px;
-    color: rgba(3, 1, 103, 1);
+    color: var(--dark-blue);
 }
 #accordion label + input[type="radio"]{
     display: none;
@@ -243,10 +234,15 @@ a {
 
 .contactbanner{
     margin-top:2%;
-    background-color: rgba(3, 1, 103, 1);
+    background-color: var(--dark-blue);
     height: 25%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     color:white;
 }
+
+.contactbanner div{
+    padding:30px
+}
+
